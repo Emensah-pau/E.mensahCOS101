@@ -9,7 +9,7 @@ fn main() {
     println!("Welcome to the PAN - ATLANTIC UNIVERSITY voting portal");
 
     println!("Are u a class representative:
-              Enter y for yes & n for no");
+              Enter Y for yes & N for no");
     let mut input1 = String::new();
     io::stdin().read_line(&mut input1).expect("");
     let imput1 = input1.trim();
@@ -59,8 +59,14 @@ fn main() {
                  S.O.O: {}
                  YOU ARE ELIGIBLE TO VOTE", input4,input5,imput6,input7,input8);
     }
-    else{
+    else {
         println!("You are not eligible to vote")
     }
+    println!("Press OK to continue");
+    let mut input9 = String::new();
+    io::stdin().read_line(&mut input9).expect("");
+    let input9 = input9.trim();
+
+
 }
 }
